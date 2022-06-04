@@ -17,18 +17,13 @@ public class Player {
 
 
 
-    public Player(String name) {
-        this.name = name;
 
-
-
-    }
 
 
     public String newPlayer() {
         msg.showNewNamePlayer();
         name = scan.nextLine();
-        new Player(name);
+
 
         return name;
 
