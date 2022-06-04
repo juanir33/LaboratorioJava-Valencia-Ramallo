@@ -24,5 +24,14 @@ public class Messages {
         logger.info("\t JUEGO TERMINADO");
     }
 
+    public void showWithdraw(){
+        logger.info("DESEAS RETIRARTE CON LO GANADO? \nr) -->Retirarse \\n cualquier letra) -->Continuar");
+
+
+    }
+    public void showWithdrawPrizes(int prizes){
+        logger.info("\tTE HAS RETIRADO, \n\tTU PREMIO ES: "+prizes);
+    }
+
 
 }
