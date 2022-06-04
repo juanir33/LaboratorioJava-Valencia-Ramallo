@@ -50,5 +50,10 @@ public class Messages {
         logger.info("\tTU PUNTAJE ES: " + totalPrize);
     }
 
+    public void showWin(String player , int totalPrize){
+        logger.info("\t *** FELICIDADES  "+ player +" ERES EL CAMPEON!! ***");
+        logger.info("\t TU PREMIO ACUMULADO ES: "+ totalPrize);
+    }
+
 
 }
