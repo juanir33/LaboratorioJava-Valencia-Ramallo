@@ -5,7 +5,7 @@ import org.jboss.logging.Logger;
 import java.util.Scanner;
 
 public class Messages {
-    private static final Logger logger = Logger.getLogger(Messages.class);
+    public static final Logger logger = Logger.getLogger(Messages.class);
     public static final Scanner scan = new Scanner(System.in);
     public static Messages getInstance() {
         return new Messages();
@@ -18,4 +18,11 @@ public class Messages {
         logger.info("POR FAVOR INGRESA TU NOMBRE");
 
     }
+
+    public void showLoose(int prize){
+        logger.info("\tHAS PERDIDO TU PREMIO QUEDA EN: "+ prize);
+        logger.info("\t JUEGO TERMINADO");
+    }
+
+
 }
